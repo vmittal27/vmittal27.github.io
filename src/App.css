@@ -1,38 +1,149 @@
+#top {
+  height: 100vh;
+  display: flex;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #262525;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  text-align: left;
+  background-color: #282c34;
+  color: white; 
+  min-height: 100vh;
+  flex-grow: 1;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:#262525;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  justify-content: space-between;
+  font-size: calc(9px + 2vmin);
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.Content-header {
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: first baseline;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
+  color: white;
+  padding-left: 2em
+}
+
+.Contacts {
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  padding-left: 2em;
+  font-size: calc(8px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Project-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  row-gap: 2vh;
+  column-gap: 8vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 60em) {
+  .Project-container {
+    grid-template-columns: 1fr; 
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.Project {
+  border-radius: 4%;
+  background-color: #5b6373;
+  aspect-ratio: auto;
+  box-sizing: border-box;
+  text-align: left;
+  text-wrap: wrap;
+  font-size: calc(6px + 2vmin);
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white; 
+}
+
+.Project-header {
+  display: flex; 
+  flex-direction: row;
+  align-items: first baseline;
+  font-size: calc(8px + 2vmin);
+  justify-content: space-between;
+}
+
+.Project-tag-container {
+  display: flex; 
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1vh;
+  column-gap: 0.5vw;
+}
+
+.Project-tag {
+  align-items: center;
+  background-color: #262525;
+  border-radius: 20px;
+  text-align: center;
+  font-size: calc(6.5px + 1vmin);
+  padding: 0.5em;
+  box-sizing: border-box;
+  margin:auto;
+}
+
+button {
+  border: none; 
+  cursor: pointer; 
+  appearance: auto;
+  background-color: inherit;
+
+}
+
+button:hover {
+  background-color:#d8d9d7;
+}
+
+button img{
+  width:50px; 
+  height:50px; 
+}
+
+.default-link{
+  text-decoration: none !important;
+  color: white;
+}
+.default-link:hover{
+  color:#d8d9d7;
+}
+
+.pdf {
+  width: fit-content;
+  display: flex;
+  flex-grow: 1;
+  aspect-ratio: 4 / 3;
 }
