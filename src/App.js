@@ -17,10 +17,10 @@ function App() {
           <br/>
           <p>
             {
-              `My name is Viresh, a student at the University of Chicago.`
+              `My name is Viresh, a student at the University of Chicago. Feel free to reach out at any time.`
             }
           </p>
-          <p>Check out my past work below.</p>
+          <p>Check out some of my <a href="#projects" className='secondary-link' style={{fontWeight: "600"}}>past work</a> below.</p>
       </header>
       <header className='Content-header'> 
         <h2>Contact</h2>
@@ -28,24 +28,24 @@ function App() {
           <div className='Contacts'>
             <Contact
               link={'https://github.com/vmittal27'}
-              icon={'https://cdn-icons-png.flaticon.com/512/25/25231.png'}
+              icon={'fa-brands fa-square-github'}
             />
             <Contact
               link={'https://www.linkedin.com/in/vireshm'}
-              icon={'https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Icon-Logo.wine.svg'}
+              icon={'fa-brands fa-linkedin'}
             />
             <Contact
               link={'mailto:vmittal@uchicago.edu'}
-              icon={'https://cdn-icons-png.freepik.com/256/46/46951.png?semt=ais_hybrid'}
+              icon={'fa-solid fa-envelope'}
             />
           </div>
         <header className='Content-header'>
           <h2>Projects</h2>
         </header>
-        <div className='Project-container'>
+        <div className='Project-container' id='projects'>
           <Project
             name="Walk for Groot"
-            link="https://grooot.streamlit.app/"
+            code_access="https://github.com/vmittal27/uncommon-hacks-2024"
             date="March 2024"
             description=
             {`Award winning project developed at the UChicago Uncommon Hacks 2024 that calculates net carbon emissions
@@ -60,10 +60,11 @@ function App() {
                 {'label': 'BeautifulSoup'}
               ]
             }
+            demo="https://grooot.streamlit.app/"
           />
           <Project
             name="Go"
-            link=""
+            code_access="mailto:vmittal@uchicago.edu"
             date="February 2024"
             description=
             {

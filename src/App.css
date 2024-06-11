@@ -1,8 +1,9 @@
 :root {
-  --text: #3B3D3F;
+  --text: #424344;
   --primary: #F7F9FC; 
-  --secondary: #bfe5f5;
-  --accent: #3700B3;
+  --secondary: #618985;
+  --accent: #3700b3;
+  --light-accent: rgba(55, 0, 179, 0.5);
   --shadow-color: 217deg 13% 64%;
   --shadow-elevation-medium:
   -1px 1px 1.3px hsl(var(--shadow-color) / 0.41),
@@ -28,7 +29,6 @@ html, body {
 
 .App {
   text-align: left;
-  /* color: var(--text); */
   min-height: 100vh;
   flex-grow: 1;
   padding-inline: 12vw;
@@ -79,7 +79,8 @@ html, body {
   align-items: flex-start;
   justify-content: left;
   font-size: calc(8px + 2vmin);
-  color: var(--text)
+  color: var(--text);
+  column-gap: 1em;
 }
 
 .Project-container {
@@ -99,7 +100,9 @@ html, body {
 
 .Project {
   border-radius: 4%;
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
+  border: 3px solid;
+  border-color: var(--secondary);
   aspect-ratio: auto;
   box-sizing: border-box;
   text-align: left;
@@ -123,13 +126,13 @@ html, body {
   align-items: first baseline;
   font-size: calc(8px + 2vmin);
   justify-content: space-between;
-  color: var(--text);
 }
 
 .Project-tag-container {
   display: flex; 
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   row-gap: 2vh;
   column-gap: 0.4em;
@@ -137,14 +140,17 @@ html, body {
 
 .Project-tag {
   align-items: center;
-  background-color: var(--primary);
+  /* background-color: var(--secondary); */
   border-radius: 20px;
   text-align: center;
   font-size: calc(6px + 1vmin);
   padding: 0.5em;
   box-sizing: border-box;
-  margin:auto;
-  box-shadow: var(--shadow-elevation-medium)
+  margin:1.5px;
+  color:var(--text);
+  border: 1.5px solid;
+  border-color: var(--secondary);
+
 }
 
 button {
@@ -156,7 +162,6 @@ button {
 }
 
 button:hover {
-  /* background-color:var(--secondary); */
   transform: scale(1.1);
 }
 
@@ -200,4 +205,9 @@ button img{
 
 .Project:hover {
   transform: scale(1.005);
+}
+
+.secondary-link {
+  text-decoration: none !important;
+  color: var(--secondary);
 }
