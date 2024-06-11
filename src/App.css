@@ -1,3 +1,19 @@
+:root {
+  --text: #3B3D3F;
+  --primary: #F7F9FC; 
+  --secondary: #bfe5f5;
+  --accent: #3700B3;
+  --shadow-color: 217deg 13% 64%;
+  --shadow-elevation-medium:
+  -1px 1px 1.3px hsl(var(--shadow-color) / 0.41),
+  -1.9px 1.9px 2.5px -1px hsl(var(--shadow-color) / 0.35),
+  -4.1px 4.1px 5.3px -1.9px hsl(var(--shadow-color) / 0.3),
+  -9.3px 9.3px 12.1px -2.9px hsl(var(--shadow-color) / 0.24),
+  -19.3px 19.3px 25.2px -3.8px hsl(var(--shadow-color) / 0.18);
+
+}
+
+
 #top {
   height: 100vh;
   display: flex;
@@ -7,28 +23,43 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #262525;
+  background-color: var(--primary);
 }
 
 .App {
   text-align: left;
-  background-color: #282c34;
-  color: white; 
+  /* color: var(--text); */
   min-height: 100vh;
   flex-grow: 1;
+  padding-inline: 12vw;
+  padding-block: 8vh;
+  background-color: var(--primary);
 }
 
 .App-header {
-  background-color:#262525;
+  background-color: var(--primary);
+  color: var(--accent);
   min-height: 10vh;
   display: flex;
   flex-direction: row;
-  align-items: first baseline;
+  align-items: baseline;
   justify-content: space-between;
-  font-size: calc(9px + 2vmin);
-  color: white;
-  padding-left: 2em;
-  padding-right: 2em;
+  font-size: calc(8px + 2vmin);
+}
+
+.App h1 {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: calc(12px + 5vmin);
+  font-family: Courier, monospace;
+}
+
+.App h2 {
+  color: var(--text); 
+  font-weight: 600;
+  font-size:calc(8px + 3vmin) ;
+  border-bottom: 3px solid;
+  border-color: var(--accent);
 }
 
 .Content-header {
@@ -37,9 +68,8 @@ html, body {
   flex-direction: column;
   align-items: first baseline;
   justify-content: center;
-  font-size: calc(8px + 2vmin);
-  color: white;
-  padding-left: 2em
+  font-size: calc(6px + 2vmin);
+  color: var(--text)
 }
 
 .Contacts {
@@ -48,9 +78,8 @@ html, body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: left;
-  padding-left: 2em;
   font-size: calc(8px + 2vmin);
-  color: white;
+  color: var(--text)
 }
 
 .Project-container {
@@ -58,10 +87,8 @@ html, body {
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding-left: 2em;
-  padding-right: 2em;
   row-gap: 2vh;
-  column-gap: 8vw;
+  column-gap: 5vw;
 }
 
 @media (max-width: 60em) {
@@ -72,11 +99,12 @@ html, body {
 
 .Project {
   border-radius: 4%;
-  background-color: #5b6373;
+  background-color: var(--secondary);
   aspect-ratio: auto;
   box-sizing: border-box;
   text-align: left;
   text-wrap: wrap;
+  align-content: center;
   font-size: calc(6px + 2vmin);
   padding-inline: 2rem;
   padding-block: 2rem;
@@ -84,7 +112,9 @@ html, body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: white; 
+  box-shadow: var(--shadow-elevation-medium);
+  color: var(--text);
+  
 }
 
 .Project-header {
@@ -93,27 +123,28 @@ html, body {
   align-items: first baseline;
   font-size: calc(8px + 2vmin);
   justify-content: space-between;
+  color: var(--text);
 }
 
 .Project-tag-container {
   display: flex; 
   flex-direction: row;
-  align-items: end;
-  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  row-gap: 1vh;
-  column-gap: 0.5vw;
+  row-gap: 2vh;
+  column-gap: 0.4em;
 }
 
 .Project-tag {
   align-items: center;
-  background-color: #262525;
+  background-color: var(--primary);
   border-radius: 20px;
   text-align: center;
-  font-size: calc(6.5px + 1vmin);
+  font-size: calc(6px + 1vmin);
   padding: 0.5em;
   box-sizing: border-box;
   margin:auto;
+  box-shadow: var(--shadow-elevation-medium)
 }
 
 button {
@@ -125,7 +156,8 @@ button {
 }
 
 button:hover {
-  background-color:#d8d9d7;
+  /* background-color:var(--secondary); */
+  transform: scale(1.1);
 }
 
 button img{
@@ -135,10 +167,28 @@ button img{
 
 .default-link{
   text-decoration: none !important;
-  color: white;
+  color: var(--text);
+  display: inline-block;
+  position: relative;
+
 }
-.default-link:hover{
-  color:#d8d9d7;
+
+.default-link::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.default-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .pdf {
@@ -146,4 +196,8 @@ button img{
   display: flex;
   flex-grow: 1;
   aspect-ratio: 4 / 3;
+}
+
+.Project:hover {
+  transform: scale(1.005);
 }

@@ -11,7 +11,7 @@ export default function Project({name, link, date, description, tags}) {
         <div className='Project'>
             <header className='Project-header'>
                 <h3><a className='default-link' href={link}>{name}</a></h3>
-                <h5>{date}</h5>
+                <h4>{date}</h4>
             </header>
             <p>{description}</p>
             <footer className='Project-tag-container'>
