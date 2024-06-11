@@ -50,7 +50,7 @@ html, body {
 .App h1 {
   color: var(--accent);
   font-weight: 500;
-  font-size: calc(12px + 5vmin);
+  font-size: calc(2.5em);
   font-family: Courier, monospace;
 }
 
