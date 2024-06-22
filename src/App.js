@@ -16,11 +16,14 @@ function App() {
       <header className="Content-header">
           <br/>
           <p>
-            {
-              `My name is Viresh, a student at the University of Chicago. Feel free to reach out at any time.`
-            }
+            Hi! I'm Viresh Mittal, a computer science and economics student at the University of Chicago.
+            Currently, I'm working at <a className='secondary-link' href='https://icosacomputing.com/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Icosa Computing </a>
+            as a technical intern and building out <a className='secondary-link' href='https://github.com/vmittal27/hoops-head2head' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Hoops Head2Head</a>,
+            an online basketball trivia game.
+            Please reach out at any time!
           </p>
-          <p>Check out some of my <a href="#projects" className='secondary-link' style={{fontWeight: "600"}}>past work</a> below.</p>
+          <p>You can see the source code for this site <a className='secondary-link' href='https://github.com/vmittal27/vmittal27.github.io' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>here</a>.</p>
+          <p>You can see some of my other projects <a href="#projects" className='secondary-link' style={{fontWeight: "600"}}>below</a>.</p>
       </header>
       <header className='Content-header'> 
         <h2>Contact</h2>
