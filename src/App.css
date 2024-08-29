@@ -31,7 +31,7 @@ html, body {
   text-align: left;
   min-height: 100vh;
   flex-grow: 1;
-  padding-inline: 12vw;
+  padding-inline: 11vw;
   padding-block: 8vh;
   background-color: var(--primary);
 }
@@ -89,7 +89,7 @@ html, body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   row-gap: 2vh;
-  column-gap: 5vw;
+  column-gap: 3vw;
 }
 
 @media (max-width: 60em) {
@@ -100,7 +100,6 @@ html, body {
 
 .Project {
   border-radius: 4%;
-  /* background-color: var(--secondary); */
   border: 3px solid;
   border-color: var(--secondary);
   aspect-ratio: auto;
@@ -123,7 +122,7 @@ html, body {
 .Project-header {
   display: flex; 
   flex-direction: row;
-  align-items: first baseline;
+  align-items: stretch;
   font-size: calc(8px + 2vmin);
   justify-content: space-between;
 }

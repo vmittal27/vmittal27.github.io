@@ -47,6 +47,29 @@ function App() {
         </header>
         <div className='Project-container' id='projects'>
           <Project
+            name="Hoops Head 2 Head"
+            code_access="https://github.com/vmittal27/hoops-head2head"
+            date="June 2024 – Present"
+            description=
+            {
+              `Actively developing Hoops Head 2 Head, an online basketball trivia game where
+              players try to connect NBA players through mutual teammates. 
+              Features single-player and multiplayer modes, where two players can play against each
+              other in realtime. 
+              `
+            }
+            tags={
+              [
+                {'label': 'Python'},
+                {'label': 'React.js'},
+                {'label': 'Neo4j AuraDB'},
+                {'label': 'Flask'},
+                {'label': 'WebSocket'}, 
+                {'label': 'Vite'}
+              ]
+            }
+          />
+          <Project
             name="Walk for Groot"
             code_access="https://github.com/vmittal27/uncommon-hacks-2024"
             date="March 2024"
@@ -58,12 +81,34 @@ function App() {
               [
                 {'label': 'Python'},
                 {'label': 'Google Maps API'},
-                {'label': 'Streamlit'},
                 {'label': 'MongoDB'}, 
                 {'label': 'BeautifulSoup'}
               ]
             }
-            demo="https://grooot.streamlit.app/"
+            secondary_link="https://grooot.streamlit.app/"
+            secondary_link_text="Demo"
+          />
+          <Project
+            name="Langchain Icosa"
+            code_access="https://github.com/Icosa-Computing/langchain-icosa"
+            date="July – August 2024"
+            description=
+            {
+              `PIP installable, open-source package of an automatic prompting pipeline for generative AI for use with the LangChain framework. 
+              This uses a probabilistic solver to allow an LLM to offer better solutions to reasoning intensive tasks than other techniques. 
+              I developed this package during my internship at Icosa Computing in the summer of 2024.
+              `
+            }
+            tags={
+              [
+                {'label': 'Python'},
+                {'label': 'LangChain'},
+                {'label': 'LLM'},
+                {'label': 'PyPI'},
+              ]
+            }
+            secondary_link="https://pypi.org/project/langchain-icosa/"
+            secondary_link_text="Install "
           />
           <Project
             name="Go"

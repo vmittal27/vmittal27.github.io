@@ -1,13 +1,13 @@
 import './App.css';
 
-export default function Project({name, code_access, date, description, tags, demo = null}) {
+export default function Project({name, code_access, date, description, tags, secondary_link = null, secondary_link_text = null}) {
     const html_tags = tags.map(tags => 
         <div className='Project-tag'>
             <b>{tags.label}</b>
         </div>
     ); 
 
-    if (demo != null) {
+    if (secondary_link != null && secondary_link_text != null) {
         return (
             <div className='Project'>
                 <header className='Project-header'>
@@ -16,7 +16,7 @@ export default function Project({name, code_access, date, description, tags, dem
                 </header>
                 <p>
                     {description}
-                    <a className='secondary-link' style={{fontWeight: "600"}} href={demo} target='_blank' rel="noreferrer">Demo</a>
+                    <a className='secondary-link' style={{fontWeight: "600"}} href={secondary_link} target='_blank' rel="noreferrer">{secondary_link_text}</a>
                 </p>
                 <footer className='Project-tag-container'>
                     {html_tags}
