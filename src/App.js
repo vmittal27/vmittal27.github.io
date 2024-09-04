@@ -1,7 +1,6 @@
 import './App.css';
 import './Project.js'
 import './Contact.js'
-import resume from "./Resume.pdf"
 import Contact from './Contact.js';
 import Project from './Project.js';
 
@@ -11,7 +10,6 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <h1>VIRESH MITTAL</h1>
-        <a className='default-link' href={resume} target='blank' >Resume</a>
       </header>
       <header className="Content-header">
           <br/>
