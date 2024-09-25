@@ -50,7 +50,7 @@ function App() {
             date="June 2024 – Present"
             description=
             {
-              `Actively developing Hoops Head 2 Head, an online basketball trivia game where
+              `Developing Hoops Head 2 Head, an online basketball trivia game where
               players try to connect NBA players through mutual teammates. 
               Features single-player and multiplayer modes, where two players can play against each
               other in realtime. 
@@ -60,12 +60,14 @@ function App() {
               [
                 {'label': 'Python'},
                 {'label': 'React.js'},
-                {'label': 'Neo4j AuraDB'},
+                {'label': 'Neo4j'},
                 {'label': 'Flask'},
                 {'label': 'WebSocket'}, 
-                {'label': 'Vite'}
+                {'label': 'GCP'}
               ]
             }
+            secondary_link='https://hoopsh2h.sv2projects.com/'
+            secondary_link_text='Try it out'
           />
           <Project
             name="Walk for Groot"
@@ -103,6 +105,7 @@ function App() {
                 {'label': 'LangChain'},
                 {'label': 'LLM'},
                 {'label': 'PyPI'},
+                {'label': 'AWS EC2'}
               ]
             }
             secondary_link="https://pypi.org/project/langchain-icosa/"
