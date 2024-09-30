@@ -16,7 +16,7 @@ function App() {
           <p>
             Hi! I'm Viresh Mittal, a computer science and economics student at the University of Chicago.
             Currently, I'm working at <a className='secondary-link' href='https://icosacomputing.com/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Icosa Computing </a>
-            as a technical intern and building out <a className='secondary-link' href='https://github.com/vmittal27/hoops-head2head' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Hoops Head2Head</a>,
+            as a software engineering intern. I just built out <a className='secondary-link' href='https://hoopsh2h.sv2projects.com/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Hoops Head2Head</a>,
             an online basketball trivia game.
             Please reach out at any time!
           </p>
@@ -47,17 +47,17 @@ function App() {
           <Project
             name="Hoops Head 2 Head"
             code_access="https://github.com/vmittal27/hoops-head2head"
-            date="June 2024 – Present"
+            date="June – Sept 2024"
             description=
             {
-              `Developing Hoops Head 2 Head, an online basketball trivia game where
+              `Developed Hoops Head 2 Head, an online basketball trivia game where
               players try to connect NBA players through mutual teammates. 
               Features single-player and multiplayer modes, where two players can play against each
               other in realtime. 
               `
             }
             tags={
-              [
+              [ 
                 {'label': 'Python'},
                 {'label': 'React.js'},
                 {'label': 'Neo4j'},
