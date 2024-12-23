@@ -72,7 +72,7 @@ function App() {
           <Project
             name="Walk for Groot"
             code_access="https://github.com/vmittal27/uncommon-hacks-2024"
-            date="March 2024"
+            date="Mar 2024"
             description=
             {`Award winning project developed at the UChicago Uncommon Hacks 2024 that calculates net carbon emissions
             between two points using the Google Maps API and a vehicle emissions profile stored in a MongoDB database.
@@ -91,7 +91,7 @@ function App() {
           <Project
             name="Langchain Icosa"
             code_access="https://github.com/Icosa-Computing/langchain-icosa"
-            date="July – August 2024"
+            date="July – Aug 2024"
             description=
             {
               `PIP installable, open-source package of an automatic prompting pipeline for generative AI for use with the LangChain framework. 
@@ -112,20 +112,21 @@ function App() {
             secondary_link_text="Install "
           />
           <Project
-            name="Go"
-            code_access="mailto:vmittal@uchicago.edu"
-            date="February 2024"
+            name="V Shell"
+            code_access="https://github.com/vmittal27/vshell"
+            date="Nov – Dec 2024"
             description=
             {
-              `Python implementation of the popular board game Go supporting up to 8 players on a GUI or command line interface.
-              Allows user to play against a bot based off the minimax algorithm. Code available upon request.`
+              `UNIX shell with support for all UNIX commands and file redirection written in C.
+              Supports standard, prepend, and append redirection modes. `
             }
             tags={
               [
-                {'label': 'Python'},
-                {'label': 'PyGame'},
-                {'label': 'PyTest'},
-                {'label': 'Linux'}, 
+                {'label': 'C Language'},
+                {'label': 'UNIX'},
+                {'label': 'POSIX'}, 
+                {'label': 'Bash'}, 
+                {'label': 'I/O'}
               ]
             }
           />
