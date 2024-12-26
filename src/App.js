@@ -70,6 +70,25 @@ function App() {
             secondary_link_text='Try it out'
           />
           <Project
+            name="File Compressor"
+            code_access="https://github.com/vmittal27/file-compressor/"
+            date="Nov – Dec 2024"
+            description=
+            {
+              `A full lossless compression suite using an improved adaptive version of 
+              Lempel-Ziv-Welch compression with 10% higher compression ratios 
+              with a full testing framework and robust set of test files.
+              This implementation uses FNV-1a hashing for compression and array-based decompression.`
+            }
+            tags={
+              [ 
+                {'label': 'C Language'},
+                {'label': 'Bash Scripting'}, 
+                {'label': 'LZW Encoding'}, 
+              ]
+            }
+          />
+          <Project
             name="Walk for Groot"
             code_access="https://github.com/vmittal27/uncommon-hacks-2024"
             date="Mar 2024"
