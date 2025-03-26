@@ -15,8 +15,8 @@ function App() {
           <br/>
           <p>
             Hi! I'm Viresh Mittal, a computer science and economics student at the University of Chicago.
-            Currently, I'm working at <a className='secondary-link' href='https://icosacomputing.com/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Icosa Computing </a>
-            as a software engineering intern. I just built out <a className='secondary-link' href='https://hoopsh2h.sv2projects.com/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Hoops Head2Head</a>,
+            Currently, I'm doing networks and AI research at the University of Chicago <a className='secondary-link' href='https://sandlab.cs.uchicago.edu/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>SAND Lab </a>
+            ran by Professor Ben Zhao and Professor Heather Zhang. I just built out <a className='secondary-link' href='https://hoopsh2h.sv2projects.com/' target='_blank' rel="noreferrer" style={{fontWeight: "600"}}>Hoops Head2Head</a>,
             an online basketball trivia game.
             Please reach out at any time!
           </p>
