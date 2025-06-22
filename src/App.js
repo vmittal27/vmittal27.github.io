@@ -3,6 +3,7 @@ import './Project.js'
 import './Contact.js'
 import Contact from './Contact.js';
 import Project from './Project.js';
+import resume from './assets/resume.pdf';
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <h1>VIRESH MITTAL</h1>
+        <a className='default-link' href={resume} target='blank' >Resume</a>
       </header>
       <header className="Content-header">
           <br/>
@@ -89,25 +91,6 @@ function App() {
             }
           />
           <Project
-            name="Walk for Groot"
-            code_access="https://github.com/vmittal27/uncommon-hacks-2024"
-            date="Mar 2024"
-            description=
-            {`Award winning project developed at the UChicago Uncommon Hacks 2024 that calculates net carbon emissions
-            between two points using the Google Maps API and a vehicle emissions profile stored in a MongoDB database.
-            The website also uses a nearest neighbors algorithm to suggest a mix of walking and driving to reduce emissions. `}
-            tags={
-              [
-                {'label': 'Python'},
-                {'label': 'Google Maps API'},
-                {'label': 'MongoDB'}, 
-                {'label': 'BeautifulSoup'}
-              ]
-            }
-            secondary_link="https://grooot.streamlit.app/"
-            secondary_link_text="Demo"
-          />
-          <Project
             name="Langchain Icosa"
             code_access="https://github.com/Icosa-Computing/langchain-icosa"
             date="July – Aug 2024"
@@ -143,9 +126,7 @@ function App() {
               [
                 {'label': 'C Language'},
                 {'label': 'UNIX'},
-                {'label': 'POSIX'}, 
                 {'label': 'Bash'}, 
-                {'label': 'I/O'}
               ]
             }
           />
