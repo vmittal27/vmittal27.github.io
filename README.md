@@ -101,3 +101,4 @@ Replace `https://vmittal27.github.io` with your custom domain.
 - Page routes live in `src/app/`
 - Shared UI components live in `src/components/`
 - Site content lives in `src/siteData.js`
+- Need to update publication links once it's published

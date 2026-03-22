@@ -13,7 +13,7 @@ export default function ProjectsPage() {
     <article className="page">
       <h1>Projects</h1>
       <p className="projects-intro">
-        This is not an exhaustive list. More of my work can be found on my{" "}
+        Select projects. More of my work can be found on my{" "}
         <a href={siteData.links.github} target="_blank" rel="noreferrer">
           GitHub
         </a>
