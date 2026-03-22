@@ -44,7 +44,7 @@ export const siteData = {
             Haitao Zheng, Ben Y. Zhao
           </>
         ),
-        venue: "Proceedings of the 35th USENIX Security Symposium, Baltimore MD, August 2026 (In Submission)",
+        venue: "In Submission",
         year: 2026,
         abstract: "Performed a large-scale measurement of AI-generated music on Spotify, finding that AI slop is easily uploaded, " +
         "and as a result, makes up the majority of new music releases on the platform. ",

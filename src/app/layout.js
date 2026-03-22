@@ -5,7 +5,7 @@ import { SiteChrome } from "../components/SiteChrome";
 
 const siteUrl = "https://vmittal27.github.io";
 const description =
-  "Viresh Mittal is a University of Chicago student studying computer science and economics, with interests in systems, scalable infrastructure, adversarial machine learning, and high-performance data engineering.";
+  "Viresh Mittal personal website.";
 
 const lato = Lato({
   subsets: ["latin"],
