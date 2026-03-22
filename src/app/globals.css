@@ -1,3 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: #494e52;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .app-shell {
   min-height: 100vh;
   display: grid;
@@ -22,7 +45,7 @@
 
 .sidebar h1 {
   margin: 0 0 0.75rem;
-  font-family: "Merriweather", Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-size: 1.75rem;
   color: #222831;
 }
@@ -61,10 +84,6 @@
   color: #a6ce39;
 }
 
-.icon-butterfly {
-  color: #2c86ff;
-}
-
 .icon-linkedin {
   color: #0a66c2;
 }
@@ -88,15 +107,11 @@
 
 .site-title,
 .nav-link {
-  border: 0;
-  background: transparent;
-  font: inherit;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .site-title {
-  padding: 0;
-  font-family: "Merriweather", Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: #222831;
@@ -109,7 +124,6 @@
 }
 
 .nav-link {
-  padding: 0;
   color: #7a8288;
   font-size: 1.25rem;
   border-bottom: 2px solid transparent;
@@ -132,7 +146,7 @@
 .page h2,
 .page h3 {
   color: #222831;
-  font-family: "Merriweather", Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
 }
 
 .page h1 {
@@ -150,14 +164,6 @@
 .page p,
 .page li {
   line-height: 1.75;
-}
-
-.inline-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  background: #efefef;
-  border: 1px solid #e5e5e5;
 }
 
 .publication-entry,
@@ -179,7 +185,7 @@
 }
 
 .publication-year {
-  font-family: "Merriweather", Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -201,8 +207,6 @@
 }
 
 .publication-venue,
-.muted-copy,
-.cv-period,
 .footer {
   color: #7a8288;
 }
