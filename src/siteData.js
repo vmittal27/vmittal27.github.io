@@ -44,11 +44,11 @@ export const siteData = {
             Haitao Zheng, Ben Y. Zhao
           </>
         ),
-        venue: "In Submission",
+        venue: "In Submission", // TODO: UPDATE
         year: 2026,
         abstract: "Performed a large-scale measurement of AI-generated music on Spotify, finding that AI slop is easily uploaded, " +
         "and as a result, makes up the majority of new music releases on the platform. ",
-        links: {
+        links: { // TODO: UPDATE
           pdf: null,
           code: null,
           media: null,
