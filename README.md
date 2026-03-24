@@ -32,7 +32,7 @@ npm run start
 
 Deployment is handled by GitHub Actions using:
 
-- [.github/workflows/deploy.yml](/Users/vireshmittal/Documents/Website/website/.github/workflows/deploy.yml)
+- [.github/workflows/deploy.yml](./.github/workflows/deploy.yml)
 
 GitHub Pages should be configured to use `GitHub Actions` as the deployment source.
 
@@ -40,7 +40,7 @@ GitHub Pages should be configured to use `GitHub Actions` as the deployment sour
 
 The Google Scholar link is stored in:
 
-- [src/siteData.js](/Users/vireshmittal/Documents/Website/website/src/siteData.js)
+- [src/siteData.js](./src/siteData.js)
 
 Update:
 
@@ -52,7 +52,7 @@ links: {
 
 If you want the Google Scholar item to appear in the sidebar again, uncomment the corresponding line in:
 
-- [src/components/Sidebar.jsx](/Users/vireshmittal/Documents/Website/website/src/components/Sidebar.jsx)
+- [src/components/Sidebar.jsx](,/src/components/Sidebar.jsx)
 
 Look for the commented `Google Scholar` sidebar item and remove the comment.
 
@@ -70,7 +70,7 @@ www.example.com
 
 2. Update the site URL in:
 
-- [src/app/layout.js](/Users/vireshmittal/Documents/Website/website/src/app/layout.js)
+- [src/app/layout.js](./src/app/layout.js)
 
 Change:
 
@@ -80,14 +80,14 @@ const siteUrl = "https://vmittal27.github.io";
 
 to your custom domain URL.
 
-3. Update:
+1. Update:
 
-- [public/robots.txt](/Users/vireshmittal/Documents/Website/website/public/robots.txt)
-- [public/sitemap.xml](/Users/vireshmittal/Documents/Website/website/public/sitemap.xml)
+- [public/robots.txt](./public/robots.txt)
+- [public/sitemap.xml](./public/sitemap.xml)
 
 Replace `https://vmittal27.github.io` with your custom domain.
 
-4. In GitHub repository settings:
+1. In GitHub repository settings:
 
 - Go to `Settings` -> `Pages`
 - Enter the custom domain
