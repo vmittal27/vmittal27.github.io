@@ -52,7 +52,7 @@ links: {
 
 If you want the Google Scholar item to appear in the sidebar again, uncomment the corresponding line in:
 
-- [src/components/Sidebar.jsx](,/src/components/Sidebar.jsx)
+- [src/components/Sidebar.jsx](./src/components/Sidebar.jsx)
 
 Look for the commented `Google Scholar` sidebar item and remove the comment.
 
