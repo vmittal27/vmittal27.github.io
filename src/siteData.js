@@ -5,7 +5,7 @@ export const siteData = {
   bio: `3rd Year Student at UChicago`,
   location: "Chicago, IL",
   institution: "The University of Chicago",
-  lastUpdated: "March 22, 2026",
+  lastUpdated: "April 9, 2026",
   links: {
     email: "mailto:vmittal@uchicago.edu",
     googleScholar: "#",
@@ -69,6 +69,15 @@ export const siteData = {
       alt: "Markdown logo",
       externalUrl: "https://github.com/vmittal27/mkforge",
       externalText: "Follow Along"
+    },
+    {
+      title: "Quicksilver", 
+      date: "Spring 2026",
+      description: "A fast, lightweight AI-generated music detector built in Rust and available as a Chrome/Edge extension. Inspired by Deezer's research on AI-generated music detection, Quicksilver is designed to detect Suno and Udio with high accuracy.",
+      image: "/images/quicksilver.png",
+      alt: "Quicksilver logo",
+      externalUrl: "https://chromewebstore.google.com/detail/ikahnkjmdjoikhpcbpelagokjnkmpjdm?utm_source=item-share-cb",
+      externalText: "Download Extension"
     },
     {
       title: "UChicago Trading Competition",
