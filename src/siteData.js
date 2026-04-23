@@ -5,7 +5,7 @@ export const siteData = {
   bio: `3rd Year Student at UChicago`,
   location: "Chicago, IL",
   institution: "The University of Chicago",
-  lastUpdated: "April 9, 2026",
+  lastUpdated: "April 23, 2026",
   links: {
     email: "mailto:vmittal@uchicago.edu",
     googleScholar: "#",
@@ -73,11 +73,11 @@ export const siteData = {
     {
       title: "Quicksilver", 
       date: "Spring 2026",
-      description: "A fast, lightweight AI-generated music detector built in Rust and available as a Chrome/Edge extension. Inspired by Deezer's research on AI-generated music detection, Quicksilver is designed to detect Suno and Udio with high accuracy.",
+      description: "A fast, lightweight AI-generated music detector built in Rust and available as a Chrome/Edge extension or a MacOS app. Inspired by Deezer's research on AI-generated music detection, Quicksilver is designed to detect Suno and Udio with high accuracy.",
       image: "/images/quicksilver.png",
       alt: "Quicksilver logo",
-      externalUrl: "https://chromewebstore.google.com/detail/ikahnkjmdjoikhpcbpelagokjnkmpjdm?utm_source=item-share-cb",
-      externalText: "Download Extension"
+      externalUrl: "https://www.etch-humanity.org/etch-lab",
+      externalText: "Download"
     },
     {
       title: "UChicago Trading Competition",
