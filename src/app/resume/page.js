@@ -1,4 +1,5 @@
 import { siteData } from "../../siteData";
+import { redirect } from "next/navigation";
 
 export const metadata = {
   title: "Resume",
@@ -8,17 +9,5 @@ export const metadata = {
 };
 
 export default function ResumePage() {
-  return (
-    <article className="page">
-      <div className="page-header">
-        <h1>Resume</h1>
-        <a className="download-button" href={siteData.cv.downloadUrl}>
-          Download
-        </a>
-      </div>
-      <div className="pdf-embed">
-        <iframe title="Resume PDF" src={siteData.cv.embedUrl} />
-      </div>
-    </article>
-  );
+  redirect(siteData.resume);
 }

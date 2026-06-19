@@ -52,10 +52,7 @@ export const siteData = {
       },
     ],
   },
-  cv: {
-    downloadUrl: "/files/Viresh_Mittal_Resume.pdf",
-    embedUrl: "/files/Viresh_Mittal_Resume.pdf",
-  },
+  resume: "/files/Viresh_Mittal_Resume.pdf",
   projects: [
     {
       title: "Mkforge",

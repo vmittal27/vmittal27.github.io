@@ -8,7 +8,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/publications/", label: "Publications" },
   { href: "/projects/", label: "Projects" },
-  { href: "/resume/", label: "Resume" },
+  { href: siteData.resume, label: "Resume" },
 ];
 
 export function NavBar() {
@@ -21,13 +21,18 @@ export function NavBar() {
       </Link>
       <nav aria-label="Primary">
         {navItems.map((item) => {
-          const isActive = item.href === "/" ? pathname === "/" : pathname?.startsWith(item.href);
+          const isActive =
+            item.href === "/" ? pathname === "/" : item.href.startsWith("/") && pathname?.startsWith(item.href);
+
+          const shouldOpenInNewTab = item.href == siteData.resume;
+          const externalLinkTarget = shouldOpenInNewTab ? "_blank" : "_self";
 
           return (
             <Link
               key={item.href}
               className={isActive ? "nav-link active" : "nav-link"}
               href={item.href}
+              target={externalLinkTarget}
             >
               {item.label}
             </Link>
