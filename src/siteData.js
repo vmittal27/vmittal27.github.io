@@ -47,7 +47,7 @@ export const siteData = {
         abstract: "Performed a large-scale measurement of AI-generated music on Spotify, finding that AI slop is easily uploaded, " +
         "and as a result, makes up the majority of new music releases on the platform. ",
         links: [
-          { label: "PDF", url: "https://arxiv.org/abs/2606.18052" },
+          { label: "PDF", url: "https://arxiv.org/abs/2606.18052", color: "gray" },
         ],
       },
     ],
@@ -61,7 +61,7 @@ export const siteData = {
       image: "/images/md.png",
       alt: "Markdown logo",
       links: [
-        { label: "Follow Along", url: "https://github.com/vmittal27/mkforge" },
+        { label: "Follow Along", url: "https://github.com/vmittal27/mkforge", color: "gray" },
       ],
     },
     {
@@ -71,8 +71,8 @@ export const siteData = {
       image: "/images/quicksilver.png",
       alt: "Quicksilver logo",
       links: [
-        { label: "Download", url: "https://www.etch-humanity.org/etch-lab" },
-        { label: "Press", url: "https://news.uchicago.edu/story/song-ai-generated-uchicago-scientists-create-browser-extension-check"},
+        { label: "Download", url: "https://www.etch-humanity.org/etch-lab", color: "gray" },
+        { label: "Press", url: "https://news.uchicago.edu/story/song-ai-generated-uchicago-scientists-create-browser-extension-check", color: "teal" },
       ],
     },
     {
@@ -82,7 +82,7 @@ export const siteData = {
       image: "/images/utc.png",
       alt: "UTC 2026 logo",
       links: [
-        { label: "Learn More", url: "https://tradingcompetition.uchicago.edu/" },
+        { label: "Learn More", url: "https://tradingcompetition.uchicago.edu/", color: "gray" },
       ],
     }, 
     {
@@ -92,7 +92,7 @@ export const siteData = {
       image: "/images/cs358.png",
       alt: "Graph for deepfake voice impersonation attack project",
       links: [
-        { label: "View Report", url: "https://github.com/vmittal27/cs358-project/blob/main/report.pdf" },
+        { label: "View Report", url: "https://github.com/vmittal27/cs358-project/blob/main/report.pdf", color: "gray" },
       ],
     },
     {
@@ -102,7 +102,7 @@ export const siteData = {
       alt: "Graph for misallocation of AI innovation project",
       image: "/images/econ23050.png",
       links: [
-        { label: "View Report", url: "/files/ECON_23050_FINAL_REPORT.pdf" },
+        { label: "View Report", url: "/files/ECON_23050_FINAL_REPORT.pdf", color: "gray" },
       ]
     },
     {
@@ -112,7 +112,7 @@ export const siteData = {
       image: "/images/hoopsh2h.png",
       alt: "Hoops Head 2 Head logo",
       links: [
-        { label: "Play Now", url: "https://hoopsh2h.sv2projects.com/" },
+        { label: "Play Now", url: "https://hoopsh2h.sv2projects.com/", color: "gray" },
       ],
     }
 

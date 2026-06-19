@@ -39,7 +39,7 @@ a {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   background: #e5e5e5;
-  border-radius: 4px;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
@@ -248,26 +248,6 @@ a {
   transform: translateY(-1px);
   filter: brightness(1.04);
   box-shadow: 0 10px 24px rgba(34, 40, 49, 0.12);
-}
-
-.external-link-0 {
-  background: #222831;
-}
-
-.external-link-1 {
-  background: #0f7c90;
-}
-
-.external-link-2 {
-  background: #2f5d9f;
-}
-
-.external-link-3 {
-  background: #b86d2b;
-}
-
-.external-link-4 {
-  background: #3d7f4a;
 }
 
 .page-header {
