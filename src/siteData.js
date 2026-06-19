@@ -8,7 +8,7 @@ export const siteData = {
   lastUpdated: "June 19, 2026",
   links: {
     email: "mailto:vmittal@uchicago.edu",
-    googleScholar: "#",
+    googleScholar: "#", // TODO: UPDATE
     orcid: "https://orcid.org/0009-0005-9826-7591",
     github: "https://github.com/vmittal27",
     linkedin: "https://www.linkedin.com/in/vireshm",
@@ -19,16 +19,14 @@ export const siteData = {
     content:
     `I'm a junior at the University of Chicago double majoring in computer science (specializing in systems) and economics.
     I conduct research with the UChicago [SAND Lab](https://sandlab.cs.uchicago.edu/) run by Ben Zhao and Heather Zheng,
-    where I study security issues in generative AI. Recently, I have had a particular focus on
-    studying AI-generated music. While my research interests primarily
-    lie in the adversarial machine learning space,  I also have a strong interest in building
-    scalable infrastructure and high-performance data engineering systems.
+    where I study security issues in generative AI.
 
-    This summer, I'm excited to be interning as a Software Engineer at [IMC Trading](https://www.imc.com/us) in Chicago. 
+    Currently, I'm a Software Engineer Intern at [IMC Trading](https://www.imc.com/us) in Chicago. 
     Previously, I interned at [Icosa Computing](https://www.icosacomputing.com/) where I helped build the supporting infrastructure
     for a quantum-inspired optimization engine used in LLM reasoning.
     
-    In my free time, I enjoy watching Cleveland Browns football, trying out new recipes in the kitchen, and getting into pointless arguments with my friends.
+    In my free time, I enjoy watching Cleveland Browns football, trying out new recipes in the kitchen, 
+    and getting into pointless arguments with my friends.
     
     You can find more of my work on my [GitHub](https://github.com/vmittal27).`,
 
@@ -37,18 +35,20 @@ export const siteData = {
   publications: {
     items: [
       {
-        title: "Understanding the Prevalence, Detectability, and Economic Impact of AI-generated Music",
+        title: "An Empirical Analysis of AI Slop in Music Streaming",
         authors: (
           <>
             Stanley Wu, Josephine Passananti, <strong>Viresh Mittal</strong>, Wenxin Ding,
             Haitao Zheng, Ben Y. Zhao
           </>
         ),
-        venue: "In Submission", // TODO: UPDATE
+        venue: "Preprint", // TODO: UPDATE
         year: 2026,
         abstract: "Performed a large-scale measurement of AI-generated music on Spotify, finding that AI slop is easily uploaded, " +
         "and as a result, makes up the majority of new music releases on the platform. ",
-        links: [],
+        links: [
+          { label: "PDF", url: "https://arxiv.org/abs/2606.18052" },
+        ],
       },
     ],
   },
@@ -72,6 +72,7 @@ export const siteData = {
       alt: "Quicksilver logo",
       links: [
         { label: "Download", url: "https://www.etch-humanity.org/etch-lab" },
+        { label: "Press", url: "https://news.uchicago.edu/story/song-ai-generated-uchicago-scientists-create-browser-extension-check"},
       ],
     },
     {
