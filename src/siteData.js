@@ -5,7 +5,7 @@ export const siteData = {
   bio: `3rd Year Student at UChicago`,
   location: "Chicago, IL",
   institution: "The University of Chicago",
-  lastUpdated: "April 23, 2026",
+  lastUpdated: "June 19, 2026",
   links: {
     email: "mailto:vmittal@uchicago.edu",
     googleScholar: "#",
@@ -48,11 +48,7 @@ export const siteData = {
         year: 2026,
         abstract: "Performed a large-scale measurement of AI-generated music on Spotify, finding that AI slop is easily uploaded, " +
         "and as a result, makes up the majority of new music releases on the platform. ",
-        links: { // TODO: UPDATE
-          pdf: null,
-          code: null,
-          media: null,
-        },
+        links: [],
       },
     ],
   },
@@ -67,8 +63,9 @@ export const siteData = {
       description: "A high-performance, zero external dependency Markdown to PDF converter written in Rust. Still a work in progress.",
       image: "/images/md.png",
       alt: "Markdown logo",
-      externalUrl: "https://github.com/vmittal27/mkforge",
-      externalText: "Follow Along"
+      links: [
+        { label: "Follow Along", url: "https://github.com/vmittal27/mkforge" },
+      ],
     },
     {
       title: "Quicksilver", 
@@ -76,8 +73,9 @@ export const siteData = {
       description: "A fast, lightweight AI-generated music detector built in Rust and available as a Chrome/Edge extension or a MacOS app. Inspired by Deezer's research on AI-generated music detection, Quicksilver is designed to detect Suno and Udio with high accuracy.",
       image: "/images/quicksilver.png",
       alt: "Quicksilver logo",
-      externalUrl: "https://www.etch-humanity.org/etch-lab",
-      externalText: "Download"
+      links: [
+        { label: "Download", url: "https://www.etch-humanity.org/etch-lab" },
+      ],
     },
     {
       title: "UChicago Trading Competition",
@@ -85,8 +83,9 @@ export const siteData = {
       description: "As a member of the UTC Dev Team, I maintain XChange, a high-performance trading platform built in Rust. UTC is one of the largest collegiate trading competitions in the country, with 150 participants and $13,000 in prizes awarded annually.",
       image: "/images/utc.png",
       alt: "UTC 2026 logo",
-      externalUrl: "https://tradingcompetition.uchicago.edu/",
-      externalText: "Learn More",
+      links: [
+        { label: "Learn More", url: "https://tradingcompetition.uchicago.edu/" },
+      ],
     }, 
     {
       title: "Measuring Deepfake Voice Impersonation Attacks",
@@ -94,8 +93,9 @@ export const siteData = {
       description: "Class project for CMSC 35800: Advanced Adversarial Machine Learning.",
       image: "/images/cs358.png",
       alt: "Graph for deepfake voice impersonation attack project",
-      externalUrl: "https://github.com/vmittal27/cs358-project/blob/main/report.pdf",
-      externalText: "View Report",
+      links: [
+        { label: "View Report", url: "https://github.com/vmittal27/cs358-project/blob/main/report.pdf" },
+      ],
     },
     {
       title: "The Misallocation of AI Innovation in Middle Income Countries",
@@ -103,8 +103,9 @@ export const siteData = {
       description: "Class project for ECON 23050: AI, Innovation, and Growth.",
       alt: "Graph for misallocation of AI innovation project",
       image: "/images/econ23050.png",
-      externalUrl: "/files/ECON_23050_FINAL_REPORT.pdf",
-      externalText: "View Report"
+      links: [
+        { label: "View Report", url: "/files/ECON_23050_FINAL_REPORT.pdf" },
+      ]
     },
     {
       title: "Hoops Head 2 Head",
@@ -112,8 +113,9 @@ export const siteData = {
       description: "A challenging multiplayer game where players compete to connect two NBA players through a chain of shared teammates.",
       image: "/images/hoopsh2h.png",
       alt: "Hoops Head 2 Head logo",
-      externalUrl: "https://hoopsh2h.sv2projects.com/",
-      externalText: "Play Now",
+      links: [
+        { label: "Play Now", url: "https://hoopsh2h.sv2projects.com/" },
+      ],
     }
 
   ],

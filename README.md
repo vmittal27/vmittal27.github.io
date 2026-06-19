@@ -36,6 +36,20 @@ Deployment is handled by GitHub Actions using:
 
 GitHub Pages should be configured to use `GitHub Actions` as the deployment source.
 
+## Auto-updating `lastUpdated`
+
+This repo includes a tracked pre-commit hook in:
+
+- [.githooks/pre-commit](/Users/vireshmittal/Documents/Website/website/.githooks/pre-commit)
+
+To enable it in your local clone, run:
+
+```bash
+npm run hooks:install
+```
+
+The hook updates `src/siteData.js` so `lastUpdated` matches the current date before each commit.
+
 ## Updating Google Scholar
 
 The Google Scholar link is stored in:
@@ -101,4 +115,5 @@ Replace `https://vmittal27.github.io` with your custom domain.
 - Page routes live in `src/app/`
 - Shared UI components live in `src/components/`
 - Site content lives in `src/siteData.js`
-- Need to update publication links once it's published
+- Use `links: [{ label, url }, ...]` for project and publication outbound links
+- Keep each project or publication to at most 5 links

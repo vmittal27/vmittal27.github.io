@@ -1,3 +1,5 @@
+import { ExternalLinks } from "./ExternalLinks";
+
 export function ProjectCard({ project }) {
   return (
     <article className="project-card">
@@ -7,11 +9,7 @@ export function ProjectCard({ project }) {
           <h2>{project.title}</h2>
         </div>
         <p>{project.description}</p>
-        {project.externalUrl ? (
-          <a className="project-link" href={project.externalUrl} target="_blank" rel="noreferrer">
-            {project.externalText || "Visit project"}
-          </a>
-        ) : null}
+        <ExternalLinks links={project.links} />
       </div>
       <div
         className="project-image-shell"
