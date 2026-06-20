@@ -265,6 +265,38 @@ a {
   text-decoration: none;
 }
 
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.not-found-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.not-found-code {
+  margin: 0;
+  padding-right: 2rem;
+  border-right: 1px solid rgba(34, 40, 49, 0.3);
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #222831;
+}
+
+.not-found-message {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #222831;
+}
+
 .pdf-embed {
   width: 100%;
   height: min(80vh, 1000px);
